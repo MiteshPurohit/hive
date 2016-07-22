@@ -1106,8 +1106,6 @@ public class Driver implements CommandProcessor {
     }
     MetaDataFormatter mdf = MetaDataFormatUtils.getFormatter(ss.getConf());
     if(!(mdf instanceof JsonMetaDataFormatter)) {
-      LOG.info("blah blah blah blah");
-      LOG.info("MANUAL DEBIG Formatter info" + mdf );
       return cpr;
     }
     /*Here we want to encode the error in machine readable way (e.g. JSON)
